@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://www.musala.com/",
+  "reporter": "mochawesome",
+   "reporterOptions": {
+      "reportDir": "cypress/results",
+      "charts": true,
+      "reportPageTitle": "Musala Test Report",
+      "embeddedScreenshots": true,
+      "overwrite": true,
+      "inlineAssets": true
+   }
+}

@@ -1,0 +1,407 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-04-18T17:25:25.515Z",
+    "end": "2022-04-18T17:28:03.335Z",
+    "duration": 157820,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dd8caa51-026e-49c4-8564-ea538848a91d",
+      "title": "",
+      "fullFile": "cypress/integration/musala.spec.js",
+      "file": "cypress/integration/musala.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4e1c1cc5-d2f3-4bda-9827-69a101fe57f4",
+          "title": "Test Case 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "787c20cd-40cc-4da4-bc3d-0cd3c77bba6b",
+              "title": "using email: 1",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "error message appears in case of invalid email user1",
+                  "fullTitle": "Test Case 1 using email: 1 error message appears in case of invalid email user1",
+                  "timedOut": null,
+                  "duration": 14412,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.get('.contact-label > span').click();\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile);\ncy.get('#cf-4').type(this.userDetails.subject);\ncy.get('#cf-5').type(this.userDetails.message);\ncy.contains('Send').click();\ncy.get(':nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip').should('be.visible').and('have.text', 'The e-mail address entered is invalid.');",
+                  "err": {},
+                  "uuid": "3c5760dd-b94f-4f8b-a59a-b47cacc6d764",
+                  "parentUUID": "787c20cd-40cc-4da4-bc3d-0cd3c77bba6b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3c5760dd-b94f-4f8b-a59a-b47cacc6d764"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 14412,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "b83812f2-09f7-4537-83e6-b8f7bab90515",
+              "title": "using email: 2",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "error message appears in case of invalid email user2",
+                  "fullTitle": "Test Case 1 using email: 2 error message appears in case of invalid email user2",
+                  "timedOut": null,
+                  "duration": 14586,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.get('.contact-label > span').click();\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile);\ncy.get('#cf-4').type(this.userDetails.subject);\ncy.get('#cf-5').type(this.userDetails.message);\ncy.contains('Send').click();\ncy.get(':nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip').should('be.visible').and('have.text', 'The e-mail address entered is invalid.');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip`, but never found it.\n    at Context.eval (https://www.musala.com/__cypress/tests?p=cypress\\integration\\musala.spec.js:131:83)",
+                    "diff": null
+                  },
+                  "uuid": "9d241bee-f7f8-4e46-828d-8383d8f432e6",
+                  "parentUUID": "b83812f2-09f7-4537-83e6-b8f7bab90515",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "9d241bee-f7f8-4e46-828d-8383d8f432e6"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 14586,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7f72dd96-c985-4d81-bc56-6fc6984a2e96",
+              "title": "using email: 3",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "error message appears in case of invalid email user3",
+                  "fullTitle": "Test Case 1 using email: 3 error message appears in case of invalid email user3",
+                  "timedOut": null,
+                  "duration": 12656,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.get('.contact-label > span').click();\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile);\ncy.get('#cf-4').type(this.userDetails.subject);\ncy.get('#cf-5').type(this.userDetails.message);\ncy.contains('Send').click();\ncy.get(':nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip').should('be.visible').and('have.text', 'The e-mail address entered is invalid.');",
+                  "err": {},
+                  "uuid": "2cc5e73c-bef5-44b0-a45d-53d148e59e5b",
+                  "parentUUID": "7f72dd96-c985-4d81-bc56-6fc6984a2e96",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2cc5e73c-bef5-44b0-a45d-53d148e59e5b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 12656,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "fb86195b-5533-4662-9ad2-6a767100046d",
+              "title": "using email: 4",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "error message appears in case of invalid email user4",
+                  "fullTitle": "Test Case 1 using email: 4 error message appears in case of invalid email user4",
+                  "timedOut": null,
+                  "duration": 10566,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.get('.contact-label > span').click();\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile);\ncy.get('#cf-4').type(this.userDetails.subject);\ncy.get('#cf-5').type(this.userDetails.message);\ncy.contains('Send').click();\ncy.get(':nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip').should('be.visible').and('have.text', 'The e-mail address entered is invalid.');",
+                  "err": {},
+                  "uuid": "492926ce-4ef6-4072-b0ac-0083d6ead070",
+                  "parentUUID": "fb86195b-5533-4662-9ad2-6a767100046d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "492926ce-4ef6-4072-b0ac-0083d6ead070"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 10566,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "8fe0db16-6306-4a6b-934b-59c1e5e1c17b",
+              "title": "using email: 5",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "error message appears in case of invalid email user5",
+                  "fullTitle": "Test Case 1 using email: 5 error message appears in case of invalid email user5",
+                  "timedOut": null,
+                  "duration": 11723,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.get('.contact-label > span').click();\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile);\ncy.get('#cf-4').type(this.userDetails.subject);\ncy.get('#cf-5').type(this.userDetails.message);\ncy.contains('Send').click();\ncy.get(':nth-child(4) > .wpcf7-form-control-wrap > .wpcf7-not-valid-tip').should('be.visible').and('have.text', 'The e-mail address entered is invalid.');",
+                  "err": {},
+                  "uuid": "0359631f-4cfb-4657-bf63-6c2164998377",
+                  "parentUUID": "8fe0db16-6306-4a6b-934b-59c1e5e1c17b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0359631f-4cfb-4657-bf63-6c2164998377"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 11723,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1af77e06-30e0-4383-b09a-5e4ad9a870ea",
+          "title": "Test Case 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify facebook link redirects to valid page",
+              "fullTitle": "Test Case 2 verify facebook link redirects to valid page",
+              "timedOut": null,
+              "duration": 14304,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#menu-main-nav-1 > .menu-item-887 > .main-link').click({\n  force: true\n});\ncy.url().should('eq', 'https://www.musala.com/company/');\ncy.get('.company-members').should('be.visible');\ncy.contains('Leadership');\ncy.get('#wt-cli-accept-all-btn').click();\ncy.get('[href=\"https://www.facebook.com/MusalaSoft?fref=ts\"] > .musala').should('be.visible'); // cy.get('[href=\"https://www.facebook.com/MusalaSoft?fref=ts\"]').invoke('removeAttr', 'target').click()",
+              "err": {},
+              "uuid": "3b95eece-6444-4fa8-94d5-12c422f917af",
+              "parentUUID": "1af77e06-30e0-4383-b09a-5e4ad9a870ea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b95eece-6444-4fa8-94d5-12c422f917af"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14304,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b4c111a9-d38d-45d1-afbe-2a4604fec467",
+          "title": "Test Case 3",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check user can apply for vacancies",
+              "fullTitle": "Test Case 3 check user can apply for vacancies",
+              "timedOut": null,
+              "duration": 45882,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#menu-main-nav-1 > .menu-item-478 > .main-link').click({\n  force: true\n});\ncy.contains('Check our open positions').click();\ncy.url().should('eq', 'https://www.musala.com/careers/join-us/');\ncy.get('#get_location').select('Anywhere'); // confirm page sections\ncy.contains('Automation QA Engineer').click();\ncy.contains('Requirements').should('be.visible');\ncy.contains('General description').should('be.visible');\ncy.contains('Responsibilities').should('be.visible');\ncy.contains('What we offer').should('be.visible');\ncy.get('[value=\"Apply\"]').should('be.visible');\ncy.get('[value=\"Apply\"]').click({\n  force: true\n});\ncy.get('#cf-1').type(this.userDetails.name);\ncy.get('#cf-2').type(this.userDetails.email);\ncy.get('#cf-3').type(this.userDetails.mobile); // upload CV\ncy.get(\"input[type=file]\").attachFile(\"exampleCV.txt\");\ncy.get('#uploadtextfield').click();\ncy.contains('Send').click({\n  force: true\n});\ncy.contains('The e-mail address entered is invalid.').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'The e-mail address entered is invalid.' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'The e-mail address entered is invalid.' but never did.\n    at Context.eval (https://www.musala.com/__cypress/tests?p=cypress\\integration\\musala.spec.js:180:59)",
+                "diff": null
+              },
+              "uuid": "e56700ea-0916-417f-9daa-a83fc5c5a56a",
+              "parentUUID": "b4c111a9-d38d-45d1-afbe-2a4604fec467",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e56700ea-0916-417f-9daa-a83fc5c5a56a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 45882,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c2ebb14d-f4a7-4017-9e1b-e3d0fe9e4c3e",
+          "title": "Test Case 4",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "print and group vacancies in console by location",
+              "fullTitle": "Test Case 4 print and group vacancies in console by location",
+              "timedOut": null,
+              "duration": 32374,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#menu-main-nav-1 > .menu-item-478 > .main-link').click({\n  force: true\n});\ncy.contains('Check our open positions').click();\ncy.url().should('eq', 'https://www.musala.com/careers/join-us/');\ncy.get('#get_location').select('Sofia').then(() => {\n  console.log('Sofia: ');\n  cy.get(\".card-container > .card-jobsHot__link > .card > .front\").each($card => {\n    console.log('Position: ' + $card.find('.card-jobsHot__title').text());\n    console.log('More info: ' + $card.parents('.card-jobsHot__link').attr('href'));\n  });\n});\ncy.get('#get_location').select('Skopje').then(() => {\n  console.log('Skopje: ');\n  cy.get(\".card-container > .card-jobsHot__link > .card > .front\").each($card => {\n    console.log('Position: ' + $card.find('.card-jobsHot__title').text());\n    console.log('More info: ' + $card.parents('.card-jobsHot__link').attr('href'));\n  });\n});",
+              "err": {},
+              "uuid": "b5ada775-aec3-48c2-afa7-1750fd2e8f66",
+              "parentUUID": "c2ebb14d-f4a7-4017-9e1b-e3d0fe9e4c3e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b5ada775-aec3-48c2-afa7-1750fd2e8f66"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32374,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "charts": true,
+        "reportPageTitle": "Musala Test Report",
+        "embeddedScreenshots": true,
+        "overwrite": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
